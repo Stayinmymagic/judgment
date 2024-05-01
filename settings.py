@@ -6,7 +6,7 @@
 #     https://docs.scrapy.org/en/latest/topics/settings.html
 #     https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://docs.scrapy.org/en/latest/topics/spider-middleware.html
-
+import os
 BOT_NAME = 'judgment'
 
 SPIDER_MODULES = ['judgment.spiders']
@@ -86,3 +86,5 @@ ROBOTSTXT_OBEY = True
 #HTTPCACHE_DIR = 'httpcache'
 #HTTPCACHE_IGNORE_HTTP_CODES = []
 #HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
+MONGODB = "mongodb+srv://roey:{password}@atlascluster.udhqf7l.mongodb.net".format(password=os.getenv('MONGODB_PWD'))
+MONGODB_NAME = 'judgment'
