@@ -7,7 +7,7 @@ from scrapy.utils.reactor import install_reactor
 #     https://docs.scrapy.org/en/latest/topics/settings.html
 #     https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://docs.scrapy.org/en/latest/topics/spider-middleware.html
-
+import os
 BOT_NAME = 'judgment'
 
 SPIDER_MODULES = ['judgment.spiders']
@@ -89,5 +89,10 @@ ITEM_PIPELINES = {
 #HTTPCACHE_IGNORE_HTTP_CODES = []
 #HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
 
+MONGODB = "mongodb+srv://roey:{password}@atlascluster.udhqf7l.mongodb.net".format(password=os.getenv('MONGODB_PWD'))
+MONGODB_NAME = 'judgment'
+
+
 install_reactor("twisted.internet.asyncioreactor.AsyncioSelectorReactor")
 TWISTED_REACTOR = "twisted.internet.asyncioreactor.AsyncioSelectorReactor"
+
