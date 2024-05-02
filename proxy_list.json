@@ -1,0 +1,12 @@
+[{"scheme": "https", "proxy": "https://3.101.73.107:1080", "port": "1080"},
+{"scheme": "https", "proxy": "https://18.222.233.151:3256", "port": "3256"},
+{"scheme": "https", "proxy": "https://45.129.183.14:3128", "port": "3128"},
+{"scheme": "https", "proxy": "https://195.211.154.44:3128", "port": "3128"},
+{"scheme": "https", "proxy": "https://202.165.47.90:55443", "port": "55443"},
+{"scheme": "https", "proxy": "https://3.226.182.186:3128", "port": "3128"},
+{"scheme": "https", "proxy": "https://18.222.233.151:3256", "port": "3256"},
+{"scheme": "https", "proxy": "https://3.101.73.107:1080", "port": "1080"},
+{"scheme": "https", "proxy": "https://185.217.136.67:1337", "port": "1337"},
+{"scheme": "https", "proxy": "https://34.94.148.191:3128", "port": "3128"},
+{"scheme": "https", "proxy": "https://117.250.3.58:8080", "port": "8080"}
+]
